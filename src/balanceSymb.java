@@ -21,7 +21,7 @@ public class balanceSymb {
 					//if yes it removes from the list
 					stack.pop();
 				}else {
-					//If symbol doesnt close "Symbols are not balanced"
+					//If there are still symbols on stack library means that "Symbols are not balanced"
 					System.out.println("Is Not Balanced");
 					return 0;
 				}

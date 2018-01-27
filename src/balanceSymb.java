@@ -1,6 +1,9 @@
 import java.util.Stack;
+import java.util.Scanner; 
 
 public class balanceSymb {
+	private static Scanner reader;
+
 	public static String balancer(String s) {
 		boolean Matches = true;
 		//checks if input is empty
@@ -40,7 +43,7 @@ public class balanceSymb {
 					} else {
 						// If there are still symbols on stack library means that "Symbols are not
 						// balanced"
-						System.out.println("Symbols Is Not Balanced");
+						System.out.println("Symbols are not balanced");
 						return "Symbols are not Balanced";
 					}
 				}
@@ -56,9 +59,11 @@ public class balanceSymb {
 	}
 
 	public static void main(String[] args) {
-		// We import the string for the program to execute
-		String s = " ";
+		reader = new Scanner(System.in);
 		// calling the class balancer
+		System.out.println("Enter Some Symbols:");
+		String s = reader.next();
+		System.out.println("Input: "+s);
 		balancer(s);
 	}
 }

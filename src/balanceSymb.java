@@ -34,7 +34,7 @@ public class balanceSymb {
 
 	public static void main(String[] args) {
 		//We import the string for the program to execute
-		String s = "[()()()()()()()()()()()()()()()()()()(){}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{{{}}}{}{}{}{}{}{}{}{}{}{}]";
+		String s = "[()()()]";
 		//calling the class balancer
 		balancer(s);
 	}

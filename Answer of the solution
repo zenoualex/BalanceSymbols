@@ -1,0 +1,16 @@
+Task: Write a program to determine if the the parentheses (), the brackets [], and the braces {}, in a string are balanced (GitHub Link: https://github.com/zenoualex/BalanceSymbols) 
+
+-Solution and Explanation
+
+  For the development of this project I used Eclipse with no extended libraries or tools. As a first step, I decided  which class I should use for this project. 
+
+  I was between Dictionaries, Array Lists and Stack. My final decision was to use Stack because it represents the Last In-First Out (LIFO) principle stack of objects. Although Stack is a very simple idea, yet it is very powerful. For the specific assignment at hand, through the LIFO Stack, 
+  the Method Balancer that I created reads the input from the user (in this case symbols of parentheses, brackets and braces), through a “For” statement. As it reads every single symbol of the string, each of these symbols are registered, using a stack.push(); command, in a Stack library. Then the Method Balancer checks whether the symbols entered by the user are balanced. Through a stack.pop(); command, if there are matching symbols (balanced symbols) they get removed from the Stack library. If a symbol is not balanced, then this symbol remains in the Stack library. Following, using the stack.isEmpty(); command we can check whether there are any symbols left in the Stack library. If there are no symbols left, then the symbols are balanced and the user sees the message “The symbols are balanced”. In addition, Ι anticipated the case of a user entering characters other than symbols. In this case the user receives  an error message saying “You can only type “You can only type symbols like (, {, [.” 
+
+-Unit Testing
+
+  For the unit testing I used JUnit Java’s libraries and I wrote seven cases that might affect the program and results came out positive. Below you will find in detail the above mentioned seven cases. 
+
+-How to run the program
+
+  At the beginning we enter GitHub and we download the program as ZIP. Then we extract the files and save them in the computer. Using a Developer tool such as Eclipse, Netbeans or IntelliJ we right click to import the project to our Package Explorer. Finally we access the file “balanceSymb.java” located in the src folder and we hit RUN. On the terminal a message will appear asking you to type the symbols of your choice and by pressing enter you will see the results.
